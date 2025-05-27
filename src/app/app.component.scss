@@ -36,16 +36,28 @@
     }
 
     .profile-contact {
-        display: flex;
-        gap: 1rem;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        .details-grid {
+            .grid-block{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+            }
+        }
 
         .contact-wrapper {
             display: flex;
             gap: 1rem;
-            width: 35rem;
             align-items: center;
+        }
+    }
+
+    .details-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .grid-block {
+            flex: 1 1 calc(50% - 0.5rem);
         }
     }
 }
