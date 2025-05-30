@@ -4,7 +4,27 @@
     gap: 1.5rem;
     max-width: 80rem;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem;
+
+    h1 {
+        font-size: 2rem
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: #3f51b5;
+    }
+
+    h3 {
+        font-size: 1.17rem;
+    }
+
+    p,
+    span,
+    ul li {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
 
     .border {
         width: 100%;
@@ -18,18 +38,20 @@
         gap: 2rem;
 
         .profile-image-wrapper {
-           display: flex; 
+            display: flex;
 
-           img {
+            img {
                 border-radius: 5rem;
-           }
+            }
         }
 
         .profile-details {
-            h1, h2 {
+
+            h1,
+            h2 {
                 margin: 0;
             }
-    
+
             display: flex;
             flex-direction: column;
             gap: .5rem;
@@ -38,7 +60,7 @@
 
     .profile-contact {
         .details-grid {
-            .grid-block{
+            .grid-block {
                 display: flex;
                 flex-direction: column;
                 gap: .5rem;
@@ -53,25 +75,36 @@
     }
 
     .details-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+        row-gap: 2rem;
 
-        .grid-block {
-            // flex: 1 1 calc(50% - 0.5rem);
-            width: 49%;
-        }
+        // .certificates {
+        //     margin: -8rem 0 0 0;
+        // }
 
-        .certificates {
-            margin: -5rem 0 0 0;
-        }
+        // .languages {
+        //     margin: -18rem 0 0 0;
+        // }
 
+        // .interests {
+        //     margin: -38rem 0 0 0;
+        // }
+
+        .skills,
+        .certificates,
         .languages {
-            margin: -10rem 0 0 0;
-        }
-
-        .interests {
-            margin: -23rem 0 0 0;
+            align-self: start;
+            /* This is the key! */
         }
     }
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem 0;
 }

@@ -1,11 +1,11 @@
-<div class="main-wrapper">
+<div #containerForExport class="main-wrapper">
   <div class="profile">
     <div class="profile-image-wrapper">
       <img src="IMG_20160111_162139.jpg" width="160" height="auto" alt="My Profile Image">
     </div>
     <div class="profile-details">
       <h1>Peter Tsampakiouris</h1>
-      <h2>Frontend Developer</h2>
+      <h2>Front-end Developer</h2>
     </div>
   </div>
   <div class="border"></div>
@@ -47,7 +47,7 @@
     <div class="grid-block skills">
       <h2><strong>SKILLS</strong></h2>
       <mat-chip-set aria-label="Developer Skills">
-        <mat-chip>Front End Developent</mat-chip>
+        <mat-chip>Front-end Developer</mat-chip>
         <mat-chip>HTML</mat-chip>
         <mat-chip>CSS</mat-chip>
         <mat-chip>JavaScript</mat-chip>
@@ -72,11 +72,11 @@
     </div>
     <div class="grid-block certificates">
       <h2><strong>CERTIFICATES</strong></h2>
-      <h3>Department of Electrical and Computer Engineering (ECE) - Bachelor's Degree <br>(09/2010 - 06/2019)</h3>
+      <h3>Department of Electrical and Computer Engineering (ECE) - Bachelor's Degree (09/2010 - 06/2019)</h3>
       <h3>Edexcel - London Tests of English Level 3 (05/2007) <br><i>UPPER INTERMEDIATE COMMUNICATION</i></h3>
     </div>
     <div class="grid-block">
-      <h3><strong>Front End Developer (4 Years)</strong></h3>
+      <h3><strong>Front-end Developer (4 Years)</strong></h3>
       <h3>Ecoworld SA</h3>
       <span>11/2020 - 02/2025, Heraklion, Crete, Greece</span>
       <p><i>A company providing ferry booking, hotel and car rental services.</i></p>
@@ -84,7 +84,7 @@
         <li>Development and maintance of the company's websites using a custom PHP system that follows the MVC principle. (4 years)</li>
         <li>Development of an administration system that is used by the company's booking department for company's daily stuﬀ work. Worked on sections of it.(Angular & Angular Material) (9 months)</li>
         <li>Development of a monorepo project that would migrate the older websites as angular apps that would use common libraries (UI components library - using Angular Material - , services fetching data from company's microservices etc.) (6 months)</li>
-        <li>Development of newsletter mail templates using table layout approach. (HTML, CSS) (3 years)</li>
+        <li>Development of newsletter mail templates using table layout approach. (HTML, CSS) <br> (3 years)</li>
       </ul>
     </div>
     <div class="grid-block languages">
@@ -94,7 +94,6 @@
         <li><strong>English</strong> - Upper Intermediate (C1) - Professional Working Proﬁciency</li>
       </ul> 
     </div>
-    <div class="grid-block"></div>
     <div class="grid-block interests">
       <h2><strong>INTERESTS</strong></h2>
       <mat-chip-set aria-label="Interest">
@@ -105,4 +104,7 @@
       </mat-chip-set>
     </div>
   </div>
+</div>
+<div class="btn-wrapper">
+  <button mat-raised-button color="primary" (click)="exportToPdf()">Export as PDF</button>
 </div>
