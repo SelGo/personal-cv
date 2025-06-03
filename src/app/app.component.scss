@@ -79,18 +79,15 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 4rem;
         row-gap: 2rem;
+        padding: 0 1rem;
 
-        // .certificates {
-        //     margin: -8rem 0 0 0;
-        // }
+        .education {
+            grid-row: 1 / 3;
+        }
 
-        // .languages {
-        //     margin: -18rem 0 0 0;
-        // }
-
-        // .interests {
-        //     margin: -38rem 0 0 0;
-        // }
+        .work-experience {
+            grid-row: 3 / 6;
+        }
 
         .skills,
         .certificates,
